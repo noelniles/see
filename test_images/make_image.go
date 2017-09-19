@@ -3,9 +3,6 @@ package test_images
 import (
     "image"
     "image/color"
-    //"image/gif"
-    //"image/jpeg"
-    //"image/png"
 )
 
 // WhiteImage will return an image that is completely white.
@@ -21,7 +18,7 @@ func WhiteImage() (*image.RGBA) {
 }
 
 // BlackImage will return an image that is completely black.
-func BlackImage() (*image.Uniform) {
+func BlackImage() (*image.RGBA) {
     img := image.NewRGBA(image.Rect(0, 0, 256, 256))
 
     for j := 0; j < img.Bounds().Max.Y; j++ {
